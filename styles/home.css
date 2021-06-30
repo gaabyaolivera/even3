@@ -109,20 +109,21 @@ aside ul li:hover {
 }
 
 /* Main */
-main {
+.main-index {
     padding-top: 50px;
     padding-left: 50px;
     border-left: 1px solid #dae3e9;
     background-color: #fff;
+    width: calc(180px - 100%);
 }
 
-main h1 {
+.main-index h1 {
     font-size: 28px;
     color: #29323d;
     margin-bottom: 10px;
 }
 
-main a {
+.main-index a {
     color: #337ab7;
     text-decoration: none;
     font-weight: bold;
@@ -188,53 +189,88 @@ main a {
 
 
 /* página 2 */
+
 .informacoes-evento {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left: 20%;
 }
-.informacoes-evento i {
+
+.informacoes-card {
+    margin-top: 50px;
+}
+
+.informacoes-card:last-child {
+    margin-bottom: 70px;
+}
+
+.informacoes-card div {
+    margin-bottom: 25px;
+}
+
+.informacoes-card h2 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #29323d;
+    margin: 0;
+}
+
+.informacoes-card p {
+    font-size: 13px;
+}
+
+.informacoes-card i {
     float: left;
     font-size: 36px;
     color: #E5E7EB;
     margin-right: 15px;
 }
-.informacoes-evento h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #29323d;
-    padding-right: 15px;
-    padding-left: 15px;
+
+.informacoes-card button {
+    float: right;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #449d44;
+    color: white;
+}
+form input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
 }
 
 form input, label {
     display: block;
+    width: 100%;
 }
 
-.informacoes-basicas {
+form label {
+    font-size: 13px;
+}
+
+form select option {
+    width: 505px;
+}
+
+form textarea {
+    width: 100%;
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.drop-option {
+    display: block;
+}
 
 
 
