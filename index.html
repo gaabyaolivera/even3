@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- tags necessárias -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="styles/home.css">
+
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/ba98747a91.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://kit.fontawesome.com/4a73c90454.js" crossorigin="anonymous"></script> -->
+
+    <!-- fonte google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <title>Even3</title>
 </head>
 <body>
     <header>
             <div>
-                <a href="#">
-                    <img src="assets/logo-even3-light.png" alt="Logo Even3">
-                </a>
+                <img src="assets/logo-even3-light.png" alt="">
                 <span>Evento Teste - Desafio Porto Digital</span>
             </div>
-            <div>
+            <nav>
                 <ul>
                     <li><a href="#">Meus Eventos</a></li>
                     <li><a href="#">Área do Organizador</a></li>
                     <li><a href="#">Equipe Even3</a></li>
                 </ul>
-            </div>
+            </nav>
     </header>
 
     <div class="content">
@@ -49,7 +56,15 @@
         <main>
             <h1>Evento Teste - Desafio Porto Digital</h1>
             <a href="#">https://www.even3.com.br/etdpd2021</a>
-            <h2>Planejamento</h2>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Planejamento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Acompanhamento</a>
+                </li>
+              </ul>
 
             <div class="planejamento">
                 <div class="planejamento-area">
@@ -65,7 +80,7 @@
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                         <span>Preencher informações básicas sobre seu evento</span>
                     </div>
-                    <a href="#">Acesse</a>
+                    <a href="informacoes-evento.html">Acesse</a>
                 </div>
 
                 <div class="planejamento-area">
@@ -110,5 +125,6 @@
             </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
