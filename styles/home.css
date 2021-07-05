@@ -120,6 +120,7 @@ aside ul li:hover {
     font-size: 28px;
     color: #29323d;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .main-index a {
