@@ -70,7 +70,7 @@
                     </select>
                     <p>As mensagens da plataforma serão enviadas neste idioma</p>
 
-                    <button>Salvar informações básicas</button>
+                    <button class="botao">Salvar informações básicas</button>
                 </form>
             </div>
 
@@ -83,10 +83,33 @@
                 </div>
                 <form>
                     <label for="titulo-evento">Tipo</label>
-                    <input type="text" id="titulo-evento" class="form-select">
+                    <select class="drop-option form-select titulo-evento" id="idioma">
+                        <option value="academico">Acadêmico - Seminário/Jornada</option>
+                        <option value="cientifico">Científico - Congresso/Simpósio</option>
+                        <option value="corporativo">Corporativo - Empresarial</option>
+                        <option value="corporativo">Curso - Workshop/Palestra</option>
+                        <option value="corporativo">Entretenimento - Show/Festa</option>
+                        <option value="corporativo">Outro</option>
+                    </select>
 
                     <label for="link-acesso">Assunto principal</label>
-                    <input type="text" id="link-acesso" class="form-select">
+                    <select class="drop-option form-select titulo-evento" id="idioma">
+                        <option value="agricultura">Agricultura, pesca e veterinária</option>
+                        <option value="humanas">Artes e humanidades</option>
+                        <option value="ciencias-sociais">Ciências sociais e jornalismo</option>
+                        <option value="ti">Computação e Tecnologias da Informação</option>
+                        <option label="Direito">Direito</option>
+                        <option label="Educação">Educação</option>
+                        <option label="Empreendedorismo e inovação">Empreendedorismo e inovação</option>
+                        <option label="Engenharias">Engenharias</option>
+                        <option label="Gastronomia">Gastronomia</option>
+                        <option label="Medicina">Medicina</option>
+                        <option label="Negócios e administração">Negócios e administração</option>
+                        <option label="Saúde e bem-estar">Saúde e bem-estar</option>
+                        <option label="Desenvolvimento pessoal">Desenvolvimento pessoal</option>
+                        <option label="Religioso e Espiritualidade">Religioso e Espiritualidade</option>
+                        <option label="Outros">Outros</option>
+                    </select>
 
                     <label for="carga-horaria">Assuntos complementares</label>
                     <input type="text" id="carga-horaria">
@@ -96,7 +119,31 @@
                     <textarea id="textarea" cols="20" rows="4"></textarea>
                     
 
-                    <button>Salvar informações de divulgação</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary button-boot" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Salvar informações de divulgação
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Percebemos que você não categorizou o seu evento, 
+                                sugerimos algumas informações que podem ajudar 
+                                a aumentar a sua visibilidade.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-nao" data-bs-dismiss="modal">Não, obrigado</button>
+                            <button type="button" class="btn btn-sim">Conferir</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+  
                 </form>
             </div>
         </main>
